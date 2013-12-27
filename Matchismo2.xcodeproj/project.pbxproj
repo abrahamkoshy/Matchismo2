@@ -21,6 +21,11 @@
 		301E7C2C186BD724003A3863 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E7C0E186BD724003A3863 /* UIKit.framework */; };
 		301E7C34186BD724003A3863 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 301E7C32186BD724003A3863 /* InfoPlist.strings */; };
 		301E7C36186BD724003A3863 /* Matchismo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C35186BD724003A3863 /* Matchismo2Tests.m */; };
+		301E7C4A186D212B003A3863 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C41186D212B003A3863 /* Card.m */; };
+		301E7C4B186D212B003A3863 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C43186D212B003A3863 /* CardMatchingGame.m */; };
+		301E7C4C186D212B003A3863 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C45186D212B003A3863 /* Deck.m */; };
+		301E7C4D186D212B003A3863 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C47186D212B003A3863 /* PlayingCard.m */; };
+		301E7C4E186D212B003A3863 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E7C49186D212B003A3863 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		301E7C31186BD724003A3863 /* Matchismo2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchismo2Tests-Info.plist"; sourceTree = "<group>"; };
 		301E7C33186BD724003A3863 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		301E7C35186BD724003A3863 /* Matchismo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matchismo2Tests.m; sourceTree = "<group>"; };
+		301E7C40186D212B003A3863 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		301E7C41186D212B003A3863 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		301E7C42186D212B003A3863 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		301E7C43186D212B003A3863 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		301E7C44186D212B003A3863 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		301E7C45186D212B003A3863 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		301E7C46186D212B003A3863 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		301E7C47186D212B003A3863 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		301E7C48186D212B003A3863 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		301E7C49186D212B003A3863 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +127,12 @@
 		301E7C10186BD724003A3863 /* Matchismo2 */ = {
 			isa = PBXGroup;
 			children = (
-				301E7C19186BD724003A3863 /* CardGameAppDelegate.h */,
-				301E7C1A186BD724003A3863 /* CardGameAppDelegate.m */,
 				301E7C1C186BD724003A3863 /* Main.storyboard */,
 				301E7C1F186BD724003A3863 /* CardGameViewController.h */,
 				301E7C20186BD724003A3863 /* CardGameViewController.m */,
 				301E7C22186BD724003A3863 /* Images.xcassets */,
 				301E7C11186BD724003A3863 /* Supporting Files */,
+				301E7C3F186D212B003A3863 /* Model */,
 			);
 			path = Matchismo2;
 			sourceTree = "<group>";
@@ -126,6 +140,8 @@
 		301E7C11186BD724003A3863 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				301E7C19186BD724003A3863 /* CardGameAppDelegate.h */,
+				301E7C1A186BD724003A3863 /* CardGameAppDelegate.m */,
 				301E7C12186BD724003A3863 /* Matchismo2-Info.plist */,
 				301E7C13186BD724003A3863 /* InfoPlist.strings */,
 				301E7C16186BD724003A3863 /* main.m */,
@@ -150,6 +166,23 @@
 				301E7C32186BD724003A3863 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		301E7C3F186D212B003A3863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				301E7C40186D212B003A3863 /* Card.h */,
+				301E7C41186D212B003A3863 /* Card.m */,
+				301E7C42186D212B003A3863 /* CardMatchingGame.h */,
+				301E7C43186D212B003A3863 /* CardMatchingGame.m */,
+				301E7C44186D212B003A3863 /* Deck.h */,
+				301E7C45186D212B003A3863 /* Deck.m */,
+				301E7C46186D212B003A3863 /* PlayingCard.h */,
+				301E7C47186D212B003A3863 /* PlayingCard.m */,
+				301E7C48186D212B003A3863 /* PlayingCardDeck.h */,
+				301E7C49186D212B003A3863 /* PlayingCardDeck.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				301E7C1B186BD724003A3863 /* CardGameAppDelegate.m in Sources */,
+				301E7C4E186D212B003A3863 /* PlayingCardDeck.m in Sources */,
 				301E7C21186BD724003A3863 /* CardGameViewController.m in Sources */,
+				301E7C4D186D212B003A3863 /* PlayingCard.m in Sources */,
+				301E7C4B186D212B003A3863 /* CardMatchingGame.m in Sources */,
 				301E7C17186BD724003A3863 /* main.m in Sources */,
+				301E7C4C186D212B003A3863 /* Deck.m in Sources */,
+				301E7C4A186D212B003A3863 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +499,7 @@
 				301E7C3B186BD724003A3863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		301E7C3C186BD724003A3863 /* Build configuration list for PBXNativeTarget "Matchismo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +508,7 @@
 				301E7C3E186BD724003A3863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
